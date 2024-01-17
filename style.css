@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    line-height: 1;
+    max-width: 100%;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 80ch;
+    gap: 1.5rem;
+    --clr-secondary: #1c3b4b;
+    --clr-neutral: #1a1a1a;
+    --clr-neutral-reverse: #fff;
+
+    & p,
+    a {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        text-decoration: none;
+    }
+
+    & header {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    & header > * {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    & h2 {
+        font-family: 'Zilla Slab', serif;
+        font-weight: 700;
+        font-size: 1.25rem;
+    }
+
+    & #external-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        & > * {
+            padding: 0.5rem;
+            min-height: 48px;
+            background: var(--clr-secondary);
+            color: var(--clr-neutral-reverse);
+            font-weight: 600;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: center;
+
+            & iconify-icon {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+address.with-icons {
+    line-height: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+section.business-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        flex-shrink: 0;
+    }
+
+    & address {
+        text-align: end;
+        flex: 1;
+    }
+}
